@@ -1,0 +1,19 @@
+{
+  "name": "compare_commits",
+  "version": "1.0.0",
+  "description": "Allow users to compare two GitHub commits and list the commit messages",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest tests/objectStructure.test.js"
+  },
+  "author": "Brock Morrison",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
+    "jest": "^27.4.3"
+  }
+}
