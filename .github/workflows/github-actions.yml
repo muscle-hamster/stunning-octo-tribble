@@ -1,0 +1,17 @@
+name: Compare Commit Messages Scripts
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Run Passing Unit Tests
+        working-directory: ./js
+        run: |
+          npm i && \
+          npm run test hashicorp terraform v1.1.0-rc1 v1.0.11
+      - name: Run Failing Unit Tests
+        working-directory: ./js
+        run: |
+          npm run test
